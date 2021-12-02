@@ -94,10 +94,7 @@
     </div>
     </details>
     <div class="video">
-    <video width="550" height="400" controls="controls" poster="img/video.png">
-      <source src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"'>
-      <!-- <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>             ВОТ ТУТ ВОТ ДОБАВЬ ВИДОС В 3 ФОРМАТАХ КАК ЗДЕСЬ НАПИСАННО -->
-      <source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+      <video width="550" height="400" controls="controls" poster="img/video.png" preload="auto" autoplay loop playsinline muted>      <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
       Тег video не поддерживается вашим браузером(Ваш браузер не поддерживает HTML5). 
     </video>
     </div>
@@ -107,11 +104,11 @@
         <div id="gform">
             <label class="screen-reader-text" for="s"></label>
             <input type="text" value="" name="q" id="s" required>
-            <button type="submit" [disabled]="!formcontrol.form.valid"">Пошук</button>
+            <button type="submit" [disabled]="!formcontrol.form.valid">Пошук</button>
         </div>
       </form>
       <svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
-        <!-- <circle cx="250" cy="50" r="4" />                                                         https://developer.mozilla.org/ru/docs/Web/SVG/Element/svg  -->
+        <circle cx="250" cy="50" r="40" />                              
       </svg>
     </form>
     <div class="foreign-lang">
